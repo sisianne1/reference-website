@@ -35,14 +35,14 @@
     width: 100%;
   }
 
-  .instructions {
-    border:#222; 
-  }
-
   ol {
     display: grid;
     padding: 2em;
     background-color:cyan;
+    border: solid;
+    border-color:#222;
+    border-width: thin;
+    max-width: 50%;
   }
 
   ol li {
@@ -51,4 +51,19 @@
 
   ol li h4 {
     font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  dl dd {
+    margin-bottom: 0.5rem;
+  }
+
+  ol, dl {
+    color:midnightblue;
+    text-align: center;
+  }
+
+  figcaption {
+    font-size:var(--font-size-sm);
   }
