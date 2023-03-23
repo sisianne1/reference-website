@@ -39,14 +39,14 @@
     width: 100%;
   }
 
-  ol {
+  #instructions ol {
     display: grid;
     padding: 2em;
-    background-color:cyan;
+    background-color:beige;
     border: solid;
     border-color:#222;
     border-width: thin;
-    max-width: 50%;
+    max-width: 80%;
   }
 
   ol li, ul li {
@@ -70,4 +70,39 @@
 
   figcaption {
     font-size:var(--font-size-sm);
+  }
+
+  #html-elements-2 a {
+    text-decoration: none;
+    transition: all 0.2s Linear;
+    color:#222;
+  }
+
+  #html-elements-2 a:hover {
+    color:blue;
+  }
+
+  dl dt {
+    animation: emphasize 5s linear infinite;
+  }
+
+  @keyframes emphasize {
+    0% {
+        font-weight: 400;
+    }
+
+    50% {
+        font-weight: 600;
+        color:blueviolet;
+    }
+
+    0% {
+        font-weight: 400;
+    }
+  }
+
+  @media only screen and (min-width: 60em) {
+    #instructions ol {
+        grid-template-columns: repeat(4, 1fr);
+    }
   }
